@@ -1,5 +1,16 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body{
+  overflow: hidden;
+}
+
 .App {
-  text-align: center;
+  background: linear-gradient(117.3deg, rgba(80,94,97,1) 12.8%, rgba(183,164,147,1) 105.26%);
+  padding-left:124.44px;
+  padding-right:124.44px;
 }
 
 .App-logo {
@@ -14,12 +25,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -36,3 +43,193 @@
     transform: rotate(360deg);
   }
 }
+
+.main{
+  width: 700px;
+  /* background-color: red; */
+}
+
+.name{
+  font-family: "NunitoSans";
+  font-weight: 800;
+  color:#FCFBFD;
+  font-size: 80px;
+  margin-top: 80px;
+}
+
+.title{
+  font-family: "NunitoSans";
+  font-weight: 600;
+  color:#FCFBFD;
+  font-size: 40px;
+  margin-top: -70px;
+}
+
+.info{
+  font-family: "NunitoSans";
+  font-weight: 600;
+  color:#FCFBFD;
+  font-size:24px;
+  margin-top: 40px;
+}
+
+.divInfo{
+  width: 601px;
+}
+
+.divBtns{
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 27px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 50px;
+}
+
+
+.boton{
+  font-family: "NunitoSans";
+  font-weight: 400;
+  color:#FCFBFD;
+  font-size:21px;
+}
+
+.btn{
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover hr{
+  animation: grow 0.3s ease-in-out 1;
+}
+
+@keyframes grow {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 95%;
+  }
+}
+@keyframes growF {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 95%;
+  }
+}
+
+hr{
+  border-radius: 5px;
+  border:0px;
+  height: 3px;
+  background-color: #FCFBFD;
+  width: 95%;
+  margin-top: -20px;
+}
+
+.both{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.carouselContainer{
+  /* background-color: green; */
+  width: 350px;
+}
+
+.carousel{
+  /* background-color: blue; */
+  margin-top: 45%;
+  height: 400px;
+  align-content: center;
+}
+
+.itemContainer{
+  width: 90%;
+  height: 70%;
+  border-radius: 15px;
+  background: rgba(80, 94, 97, 0.05);
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.24);
+  padding: 15px;
+  /* animation: shadow 2s ease-in infinite; */
+  animation: elevate 0.3s ease-in-out 1;
+  transition: 0.3s;
+}
+.itemContainer:hover{
+  width: 90%;
+  height: 70%;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.084);
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.24);
+  padding: 15px;
+  /* animation: shadow 2s ease-in infinite; */
+  transition: 0.5s;
+}
+
+
+
+@keyframes elevate {
+  0%{
+    margin-top: 0%;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.24);
+  }
+  50%{
+    margin-top: -5%;
+    box-shadow: 0px 15px 17px rgba(0, 0, 0, 0.24);
+  }
+  100%{
+    margin-top: 0%;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.24);
+  }
+}
+
+.itemContainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.arrows{
+  flex-direction: row;
+  display: flex;
+  /* background-color: red; */
+  width: 60%;
+  margin-left: 19.5%;
+  justify-content: space-around;
+  user-select: none;
+}
+
+.arrow{
+  background-color: rgba(217, 217, 217, 0.33);
+  width: 25%;
+  height: 55px;
+  border-radius: 45px;
+  cursor: pointer;
+}
+.arrow:hover{
+  background-color: rgba(217, 217, 217, 0.6);
+  width: 25%;
+  height: 55px;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.arrow p{
+  text-align: center;
+  margin-top: 19%;
+  font-family: "NunitoSans";
+  font-weight: 700;
+  color:#FCFBFD;
+  font-size:25px;
+}
+
+/* height = x * 720 / 982
+width = x * 1280 / 1512  */

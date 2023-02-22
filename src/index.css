@@ -1,3 +1,50 @@
+@font-face {
+  font-family: Play;
+  src: url('./assets/fonts/Play-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Play;
+  src: url('./assets/fonts/Play-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: NunitoSans;
+  src: url('./assets/fonts/NunitoSans-Black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: NunitoSans;
+  src: url('./assets/fonts/NunitoSans-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: NunitoSans;
+  src: url('./assets/fonts/NunitoSans-ExtraBold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: NunitoSans;
+  src: url('./assets/fonts/NunitoSans-ExtraLight.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: NunitoSans;
+  src: url('./assets/fonts/NunitoSans-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: NunitoSans;
+  src: url('./assets/fonts/NunitoSans-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: NunitoSans;
+  src: url('./assets/fonts/NunitoSans-SemiBold.ttf');
+  font-weight: 600;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
