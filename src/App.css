@@ -3,14 +3,21 @@ html{
   scroll-padding-top: 75px;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .App {
-  background: linear-gradient(117.3deg, rgba(80,94,97,1) 12.8%, rgba(183,164,147,1) 105.26%);
   padding-left:124.44px;
   padding-right:124.44px;
+}
+
+.todo{
+  background: linear-gradient(117.3deg, rgba(80,94,97,1) 12.8%, rgba(183,164,147,1) 105.26%);
 }
 
 .App-logo {
@@ -100,21 +107,16 @@ body{
 .btn{
   cursor: pointer;
   user-select: none;
+  transition: 0.3s;
 }
 
 .btn:hover hr{
   animation: grow 0.3s ease-in-out 1;
+  animation-iteration-count: 1;
 }
 
+
 @keyframes grow {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 95%;
-  }
-}
-@keyframes growF {
   0%{
     width: 0%;
   }
@@ -212,6 +214,7 @@ hr{
   height: 55px;
   border-radius: 45px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .arrow:hover{
   background-color: rgba(217, 217, 217, 0.6);
@@ -231,5 +234,119 @@ hr{
   font-size:25px;
 }
 
+.proyectos{
+  height: 99vh;
+  /* background-color: #61dafb41; */
+  padding-top: 1vh;
+}
+
+.pTitle{
+  margin-left: 4vw;
+}
+
+.ptTxt{
+  font-family: "NunitoSans";
+  color:#FCFBFD;
+  font-size: 39px;
+  font-weight: 300;
+}
+
+.pBody{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5vw;
+  margin-top: 7vh;
+}
+
+.pbI{
+  /* background-color: firebrick; */
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  overflow: hidden;
+  /* margin-left: -90px; */
+}
+
+.pbI img{
+  object-fit: cover;
+}
+
+.pbP{
+  /* background-color: rgb(34, 178, 116); */
+  width: 57vw;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.pbpN{
+  /* background-color: plum; */
+  width: 46vw;
+  text-align: center;
+  margin-right: 5vw;
+}
+
+.pbpnT{
+  font-family: "Play";
+  font-size: 42px;
+  font-weight: 700;
+  color: #FCFBFD;
+  margin-top: 1vh;
+}
+
+.pbpnTxt{
+  font-family: "NunitoSans";
+  font-size: 24px;
+  font-weight: 700;
+  color: #FCFBFD;
+}
+
+.pbpF{
+  /* background-color: darkslategray; */
+  padding-top: 30vh;
+}
+
+.pbpF img{
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  vertical-align:middle;
+}
+
+.pbpF img:hover{
+  transform: rotate(270deg);
+}
+
+.centered {
+  position:absolute;
+  top: 50%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 46vw;
+  height: 50vh;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.modalContent {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+
+
+
 /* height = x * 720 / 982
+vh = x * 100 / 720
+vw = x * 100 / 1280
 width = x * 1280 / 1512  */
