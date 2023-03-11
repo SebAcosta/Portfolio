@@ -30,8 +30,7 @@ const info = [
 	{
 		image:coi,
 		title:"COI - Control de Inventarios",
-		desc:"Nisi reprehenderit do fugiat proident occaecat dolore et. Ut officia aute Lorem sunt anim pariatur magna qui tempor do minim. Duis velit aliquip in cillum cupidatat consequat Lorem culpa veniam ea incididunt fugiat dolore. Ad non ipsum laborum labore magna dolore ad reprehenderit nisi ex ullamco dolor ullamco sunt. Velit nostrud nostrud fugiat quis Lorem et anim fugiat aliqua. Aute magna proident sit veniam. Lorem id eu sint ad. Minim magna id eu ipsum consequat non anim.",
-		desc:"Es una aplicación hecha en React Native pensada para ayudar en el control de inventarios de tiendas y de sus ventas. Se pueden crear etiquetas para poder encontrar los productos rápidamente, elegir favoritos, y modificar los datos creados. Está hecho con LocalStorage y SQLite como base de datos para asegurar la integridad y permanencia de los datos, y cada que se registre una venta, aparecerá el valor total a cobrar.",
+		desc:"Es una aplicación hecha en React Native pensada para ayudar a las tiendas tanto en el control de inventarios como de sus ventas. Se pueden crear etiquetas para poder encontrar los productos rápidamente, elegir favoritos, y modificar los datos creados. Está hecho con LocalStorage y SQLite como base de datos para asegurar la integridad y permanencia de los mismos, y cada que se registre una venta, aparecerá el importe a cobrar.",
 		video:"JURjSHVAFyY",
 		chevron: chevron,
 		proyecto:"360%"
