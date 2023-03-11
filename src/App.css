@@ -51,9 +51,26 @@ body{
   }
 }
 
+@keyframes float-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inicios {
+  animation: float-appear 1s ease forwards;
+}
+
 .main{
   width: 700px;
-  /* background-color: red; */
+  animation: float-appear 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
 }
 
 .name{
@@ -113,6 +130,7 @@ body{
 .btn:hover hr{
   animation: grow 0.3s ease-in-out 1;
   animation-iteration-count: 1;
+  transition: 0.3s;
 }
 
 
@@ -161,8 +179,11 @@ hr{
   box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.24);
   padding: 15px;
   /* animation: shadow 2s ease-in infinite; */
-  animation: elevate 0.3s ease-in-out 1;
+  animation: elevate 0.6s ease-in-out 1;
   transition: 0.3s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: both;
 }
 .itemContainer:hover{
   width: 90%;
@@ -179,14 +200,26 @@ hr{
 
 @keyframes elevate {
   0%{
+    opacity: 0;
     margin-top: 0%;
     box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.24);
   }
+  25%{
+    margin-top: -5%;
+    box-shadow: 0px 15px 17px rgba(0, 0, 0, 0.24);
+  }
   50%{
+    opacity: 1;
+    margin-top: 0%;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.24);
+  }
+  75%{
+    opacity: 1;
     margin-top: -5%;
     box-shadow: 0px 15px 17px rgba(0, 0, 0, 0.24);
   }
   100%{
+    opacity: 1;
     margin-top: 0%;
     box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.24);
   }
@@ -206,15 +239,33 @@ hr{
   margin-left: 19.5%;
   justify-content: space-around;
   user-select: none;
+  animation: float-appear 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .arrow{
-  background-color: rgba(217, 217, 217, 0.33);
+  background-color: rgba(217, 217, 217, 0.18);
   width: 25%;
   height: 55px;
   border-radius: 45px;
   cursor: pointer;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .arrow:hover{
   background-color: rgba(217, 217, 217, 0.6);
@@ -262,16 +313,19 @@ hr{
 .pbI{
   /* background-color: firebrick; */
   width: 35vw;
+  height: 69vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:flex-start;
   overflow: hidden;
-  /* margin-left: -90px; */
+  margin-left: 1vw
 }
 
 .pbI img{
-  object-fit: cover;
+  object-fit:contain;
+  max-height: 90%;
+  max-width: 80%;
 }
 
 .pbP{
@@ -310,15 +364,15 @@ hr{
   padding-top: 30vh;
 }
 
-.pbpF img{
-  transform: rotate(-90deg);
+.pbpF .chevron2{
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
   vertical-align:middle;
 }
 
-.pbpF img:hover{
-  transform: rotate(270deg);
+.pbpF .chevron2:hover{
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(360deg);
 }
 
 .centered {
@@ -340,6 +394,91 @@ hr{
   font-size: 14px;
   text-align: center;
 }
+
+.contacto{
+  height: 99vh;
+  width: 100vw;
+  /* background-color: rgba(0, 255, 255, 0.071); */
+  padding-top: 1vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.contacto a{
+  text-decoration: none;
+  font-family: "NunitoSans";
+  font-weight: 200;
+  color:#FCFBFD;
+  font-size: 36px;
+}
+
+.contacto h1{
+  font-family: "NunitoSans";
+  font-weight: 300;
+  color:#FCFBFD;
+  font-size: 73px;
+}
+
+.cBody{
+  /* background-color: rgba(94, 187, 23, 0.589); */
+  width: 60vw;
+  margin-left: 3vw;
+  margin-top: 10vh;
+}
+.cb1{
+  flex-direction: row;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  align-content: center;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+
+.cb1T{
+  margin-left: 5vw;
+  padding:1vh;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.cb1T:hover{
+  margin-left: 5vw;
+  padding:1vh;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.128);
+  transition: 0.3s;
+}
+
+.chevron{
+  padding: 1vh;
+  width:fit-content;
+  border-radius: 45px;
+  margin-left: 80vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.chevron:hover{
+  padding: 1vh;
+  width:fit-content;
+  border-radius: 45px;
+  margin-left: 80vw;
+  background-color: rgba(0, 0, 0, 0.125);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.chevron2{
+  width:fit-content;
+  height:fit-content;
+}
+
+.cb1 .copiado{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 
 
 

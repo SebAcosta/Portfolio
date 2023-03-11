@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import YouTube, { YouTubeProps } from 'react-youtube';
 
-const Modal = ({ setIsOpen, proyecto }) => {
+const Modal = ({ setIsOpen, proyecto, video }) => {
 	const opts = {
 		height: '350',
 		width: '100%',
@@ -15,7 +15,7 @@ const Modal = ({ setIsOpen, proyecto }) => {
 			<div className="centered" style={{ top: proyecto }}>
 				<div className="modal">
 					<div className="modalContent">
-						<YouTube videoId="5OrM-X2u17c" opts={opts} onReady={event=>{event.target.pauseVideo()}} />
+						<YouTube videoId={video} opts={opts} onReady={event=>{event.target.pauseVideo()}} />
 					</div>
 				</div>
 			</div>

@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle, css } from "styled-components"
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import React, { useState } from "react"
 import Slider from "react-touch-drag-slider"
 import App from "../App";
@@ -88,10 +89,10 @@ export const Carosel = () => {
 				</Slider>
 				<div className="arrows">
 					<div className="arrow" onClick={previous}>
-						<p>{"<"}</p>
+						<FiChevronLeft size={30} color={"#FCFBFD"}/>
 					</div>
 					<div className="arrow" onClick={next}>
-						<p>{">"}</p>
+						<FiChevronRight size={30} color={"#FCFBFD"}/>
 					</div>
 				</div>
 			</AppStyles>

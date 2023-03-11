@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Slider from "react-touch-drag-slider"
 import Modal from "../components/Modal";
+import { FiChevronRight } from "react-icons/fi";
+
 
 export const Proyectos = (props) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +13,7 @@ export const Proyectos = (props) => {
 			</div>
 			<div className="pBody">
 				<div className="pbI">
-					<img src={props.info.image} width="auto" height="auto"/>
+					<img src={props.info.image} width="auto" height="100%"/>
 				</div>
 				<div className="pbP">
 					<div className="pbpN">
@@ -19,10 +21,12 @@ export const Proyectos = (props) => {
 						<br/>
 						<p className="pbpnTxt" style={isOpen?{color:"#2c3e5000"}:{}}>{props.info.desc}</p>
 					</div>
-					<div className="pbpF" onClick={() => setIsOpen(isOpen?false:true)}>
-						<img src={props.info.chevron} width="40vh" height="50vw"/>
+					<div className="pbpF">
+						<div className='chevron2' onClick={() => setIsOpen(isOpen?false:true)}>
+							<FiChevronRight size={70} color={"#CAC4BD"}/>
+						</div>
 					</div>
-					{isOpen && <Modal setIsOpen={setIsOpen} proyecto={props.info.proyecto}/>}
+					{isOpen && <Modal setIsOpen={setIsOpen} proyecto={props.info.proyecto} video={props.info.video}/>}
 				</div>
 			</div>
 		</div>
