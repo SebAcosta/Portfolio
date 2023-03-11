@@ -2,8 +2,6 @@ import styled, { createGlobalStyle, css } from "styled-components"
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import React, { useState } from "react"
 import Slider from "react-touch-drag-slider"
-import App from "../App";
-import { Button } from "react-bootstrap"
 import { Item } from "./Item";
 import js from "../assets/images/js-logo.png"
 import react from "../assets/images/React-icon.svg.png"

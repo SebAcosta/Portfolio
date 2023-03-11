@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import './App.css';
 import { Banner } from './components/Banner';
 import { Proyectos } from './components/Proyectos';
 import { Contacto } from './components/Contacto';
