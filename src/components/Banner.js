@@ -12,7 +12,7 @@ export const Banner = () =>{
                 <h1 className="name">Sebastián Acosta</h1>
                 <h2 className="title">Ingeniero de software</h2>
                 <div className="divInfo">
-                    <p className="info">Consectetur ut irure eu cillum aliquip dolor ex aliqua officia fugiat labore in minim consectetur. Duis labore aute cillum fugiat id. Occaecat consequat cillum ut minim ex magna. Proident aliqua nostrud labore est est laboris. Voluptate in Lorem consectetur est cillum non culpa magna velit cupidatat est velit. Dolor non culpa nulla consectetur cupidatat occaecat tempor</p>
+                    <p className="info">Soy un ingeniero de software con conocimiento en aplicaciones móviles, APIs, videojuegos y páginas web. He colaborado como desarrollador en múltiples aplicaciones en frontend, backend, diseño y recopilación de requerimientos. Me apasiona la innovación y la creatividad, pensar en nuevas soluciones y trabajar en nuevos proyectos</p>
                 </div>
                 <div className="divBtns">
                     <div className="btn" onClick={() => handleScrollToSection("section1")}>
