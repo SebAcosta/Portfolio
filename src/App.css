@@ -68,38 +68,43 @@ body{
 }
 
 .main{
-  width: 700px;
+  width: 49vw;
   animation: float-appear 1s ease forwards;
   opacity: 0;
   animation-delay: 0.5s;
 }
 
+/* height = x * 720 / 982
+vh = x * 100 / 720
+vw = x * 100 / 1280
+width = x * 1280 / 1512  */
+
 .name{
   font-family: "NunitoSans";
   font-weight: 800;
   color:#FCFBFD;
-  font-size: 80px;
-  margin-top: 80px;
+  font-size: 5.85vw;
+  margin-top: 5.85vw;
 }
 
 .title{
   font-family: "NunitoSans";
   font-weight: 600;
   color:#FCFBFD;
-  font-size: 40px;
-  margin-top: -70px;
+  font-size: 2.93vw;
+  margin-top: -10.1vh;
 }
 
 .info{
   font-family: "NunitoSans";
   font-weight: 600;
   color:#FCFBFD;
-  font-size:24px;
-  margin-top: 40px;
+  font-size:3.45vh;
+  margin-top: 5.65vh;
 }
 
 .divInfo{
-  width: 601px;
+  width: 44vw;
 }
 
 .divBtns{
