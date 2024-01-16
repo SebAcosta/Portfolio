@@ -48,16 +48,16 @@ function App() {
 			
 			<section id="section1"> 
 				<AnimationOnScroll animateIn="animate__fadeIn" delay={300}>
-					<Proyectos info={info[2]}/>
+					<Proyectos info={info[0]}/>
 				</AnimationOnScroll>
 			</section>
 			
 			<AnimationOnScroll animateIn="animate__fadeIn" delay={300}>
-				<Proyectos info={info[0]}/>
+				<Proyectos info={info[1]}/>
 			</AnimationOnScroll>
 			
 			<AnimationOnScroll animateIn="animate__fadeIn" delay={300}>
-				<Proyectos info={info[1]}/>
+				<Proyectos info={info[2]}/>
 			</AnimationOnScroll>
 			
 			<section id="section2">
